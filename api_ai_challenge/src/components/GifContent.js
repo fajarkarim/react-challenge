@@ -9,9 +9,9 @@ class GifContent extends Component {
     return (
       <div className="col">
         <div className="card" style={cardStyle}>
-          <iframe src={this.props.gif.embed_url} frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+          <iframe src={this.props.gif.embed_url} frameBorder="0" className="giphy-embed" allowFullScreen title={this.props.key}></iframe>
           <div className="card-body">
-            <h4 className="card-title">Card title</h4>          
+            <h4 className="card-title">Card title</h4>
           </div>
         </div>
       </div>

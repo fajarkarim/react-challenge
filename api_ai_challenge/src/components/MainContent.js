@@ -41,8 +41,8 @@ class MainContent extends Component {
         <div className="card">
           <div className="card-body">
            <div className="row">
-            {this.state._gifs.map(gif => {
-              return <GifContent gif={gif}/>
+            {this.state._gifs.map((gif, i) => {
+              return <GifContent gif={gif} key={i}/>
             })}
             </div>
           </div>
